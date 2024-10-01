@@ -11,7 +11,8 @@ class DisplayActivity : AppCompatActivity() {
 
         // TODO Step 3: Extract transferred value and use for lyricsDisplayView text size
         with (findViewById<TextView>(R.id.lyricsDisplayTextView)) {
-
+            var textSize = intent.getIntExtra("TEXT_SIZE", 20)
+            textSize.also{textSize = it}
         }
 
 
